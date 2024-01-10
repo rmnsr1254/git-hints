@@ -139,4 +139,30 @@ git push -u origin master
 
 </details>
 
+---
+
+## Логи, хеши и ЖЦ файла
+
+<details>
+<summary><b>Логи, хеши и ЖЦ файла</b></summary>
+
+git log [-oneline] - история коммитов [в однострочной форме]
+
+Хеш коммита - его однозначный идентификатор
+
+HEAD - файл со ссылкой на последний коммит
+
+ЖЦ файла:
+
+```mermaid
+
+graph LR;
+
+untracked -- "git add" --> staged;
+staged -- "Изменение файла" --> tracked & modified;
+staged -- "git commit -m" --> tracked & commited
+
+```
+
+</details>
 
